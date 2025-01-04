@@ -28,6 +28,10 @@
             $("#ai").click(function () {
                 $(".ai").toggle();
             });
+
+            $("button:contains('show')").click(function () {
+                $("iframe[name='iframe_a']").attr("src", "https://drive.google.com/file/d/19jlpMN0VF5PbhVtYuuQLdJ-I7xblESwz/preview");
+            });
         });
     </script>
 
@@ -259,12 +263,13 @@
                 <button id="years"><i class="fa-solid fa-xmark" style="color: #000000; font-size: 18px;"></i></button>
             </div>
             <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-            <p><a href="ankit.1.pdf" target="iframe_a">ankit_WD</a></p>
+            <p><a href="https://drive.google.com/file/d/1rKOzk3B595wDFz-pwDPEafxb2NYx8FZu/view?usp=sharing" target="iframe_a">ankit_WD</a></p>
+            <button>show</button>
         </div>
         <div class="col paper">
             <button id="aip"><i class="fa-solid fa-bars"></i></button>
             <button id="ai">Ai</button>
-            <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+            <iframe src="" name="iframe_a" title="Iframe Example"></iframe>
         </div>
         <div class="col col-3 ai">
             <div class="ai_chet">

@@ -46,8 +46,9 @@
         }
         a{
             text-decoration: none;
-            color: #000000;
+            color: #3cff00;
             /* background-color: #3cff00; */
+            font-size: 20px;
         }
 
        
@@ -55,7 +56,8 @@
         .year_top {
             display: flex;
             align-items: center;
-            background-color: #F0F8FF;
+            /* background-color: #F0F8FF; */
+            background-color: #3cff00;
             justify-content: space-evenly;
 
         }
@@ -99,20 +101,34 @@
 
         .col {
             height: 100vh;
-            overflow: auto; /* Add this line to enable scrolling */
+            overflow: auto; /* Ensure scrolling is enabled */
         }
 
         .col:nth-child(1) {
-            background-color: #D9D9D9;
+            /* background-color: #010000; */
+            /* border: 2px solid #3cff00; */
+            height: 100vh;
+            background-color: #ffffff;
         }
 
         .col:nth-child(2) {
+            height: 100vh; /* Ensure the second column takes full height */
+            overflow: auto; /* Ensure scrolling is enabled */
             background-color: #000000;
+            /* border: 2px solid #3cff00; */
             /* position: relative; */
         }
 
+        .col:nth-child(2) iframe {
+            height: 100%; /* Ensure iframe takes full height */
+        }
+
         .col:nth-child(3) {
-            background-color: #D9D9D9;
+            /* background-color: #D9D9D9; */
+            /* background-color: #3cff00; */
+            background-color: #000000;
+            /* border: 2px solid #3cff00; */
+            
         }
 
         .ai_chet {
@@ -124,7 +140,8 @@
         }
 
         .ai_chet h4 {
-            background-color: #F0F8FF;
+            /* background-color: #F0F8FF; */
+            background-color: #f5f5f5;
             /* padding:0 5px; */
             /* padding-top: 5px; */
             border-radius: 25px;
@@ -135,7 +152,8 @@
         }
 
         .ai_chet p {
-            background-color: #F0F8FF;
+            /* background-color: #F0F8FF; */
+            background-color: #f5f5f5;
             padding: 10px;
             border-radius: 25px;
             text-align: center;
@@ -183,6 +201,7 @@
         .year {
             position: absolute;
             z-index: 2;
+            width: 30%;
         }
             /* .text-center {
                 font-size: 16px;
@@ -265,19 +284,27 @@
 
 <body>
     <div class="row gx-0 gy-0">
-        <div class="col col-2 year">
-            <div class="year_top">
+        <div class="col col-3 year">
+            <div style="height: 50%;">
+                <div class="year_top">
                 <p class="text-center mb-0">sem 1 Exam paper</p>
-                <button id="years"><i class="fa-solid fa-xmark" style="color: #000000; font-size: 18px;"></i></button>
+                <!-- <button id="years"><i class="fa-solid fa-xmark" style="color: #000000; font-size: 18px;"></i></button> -->
+                <button id="years"class="fa-solid fa-xmark" style="color: #000000; font-size: 18px; border: none;"></button>
+                </div>
+            
+                <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+                <p><a href="https://drive.google.com/file/d/19jlpMN0VF5PbhVtYuuQLdJ-I7xblESwz/preview" target="iframe_a">ankit_WD</a></p>
+                <p><a href="https://ankitsingh7777903679.github.io/Exame_Papers/sem1.html" target="PDF_YEARS">PDF_YEARS</a></p>
+                <button>show</button>
             </div>
-            <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-            <p><a href="https://drive.google.com/file/d/19jlpMN0VF5PbhVtYuuQLdJ-I7xblESwz/preview" target="iframe_a">ankit_WD</a></p>
-            <button>show</button>
+            <div style="height: 49%;">
+                <iframe frameborder="0" height="100%" width="100%" name="PDF_YEARS"></iframe>
+            </div>
         </div>
         <div class="col paper">
             <button id="aip"><i class="fa-solid fa-bars"></i></button>
-            <button id="ai">Ai</button>
-            <iframe src="" name="iframe_a" title="Iframe Example"></iframe>
+            <button id="ai">Ai</button>s
+            <iframe src="" name="iframe_a" title="Iframe Example" scrolling="no"></iframe>
         </div>
         <div class="col col-3 ai">
             <div class="ai_chet">
